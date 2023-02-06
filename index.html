@@ -548,7 +548,24 @@
             
 <!-- form -->
 <form name="form" id="contactForm" action="https://formspree.io/f/xpzepzqr" method="POST" >
-      			<fieldset>
+	<form action="https://formspree.io/f/xpzepzqr"
+  method="POST">
+<label>
+    Your Name:
+	<input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+		</label>
+  <label>
+    Your email:
+    <input type="email" name="email" type="email" id="contactEmail" placeholder="Email" value="" required="">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" type="text" id="contactSubject" placeholder="Subject" value=""></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button class="submitform" type="submit" name="submit">Send</button>
+</form>
+      			<!-- <fieldset>
                     <div class="form-field">
  				<input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
                     </div>
@@ -573,7 +590,7 @@
 			</div>
                     </div>
 
-	</fieldset>
+	</fieldset> -->
 </form>
 
             <!-- contact-warning -->
